@@ -1,0 +1,37 @@
+﻿@model Commom.DTOs.UserDTO
+
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<h2>Meu Perfil</h2>
+<br>
+<form>
+    <dl class="row">
+        <dt class="col-sm-2">
+            Nome
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+     
+        <dt class="col-sm-2">
+            Sobrenome
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+   
+        <dt class="col-sm-2">
+            E-mail
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <br>
+    </dl>
+    <div class="col-lg-12" style="text-align: left; padding-left:0px;">
+        <a asp-action="UpdateProfile" asp-for="UserId">Atualizar</a> |
+        <a asp-area="" asp-controller="Home" asp-action="Index">Retornar</a>
+    </div>
+</form>

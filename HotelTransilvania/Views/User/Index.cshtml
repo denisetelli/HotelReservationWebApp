@@ -1,0 +1,90 @@
+﻿@model IEnumerable<Commom.DTOs.UserDTO>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Usuários cadastrados</h2>
+
+
+<form asp-action="Index" method="post">
+    <div class="form-actions no-color">
+        <label for="searchBar">Procurar:</label>
+        <div class="input-group">
+            <input type="text" name="name" class="form-control" id="searchBar" placeholder="Nome ou sobrenome" value="@ViewData["CurrentFilter"]" />
+            <span class="input-group-btn">
+                <button type="submit" class="btn btn-info" value="Procurar">
+                    <span class="glyphicon glyphicon-search"></span>
+                </button>
+            </span>
+        </div>
+    </div>
+</form>
+<br>
+
+<form>
+    <div class="col-lg-12" style="text-align: left; padding-left:0px;">
+        <button type="submit" class="btn btn-info" asp-controller="User" asp-action="Create">Cadastrar novo</button>
+        <button type="submit" class="btn btn-info" asp-controller="User" asp-action="Index">Lista Completa</button>
+    </div>
+</form>
+<br>
+<br>
+
+<form method="post">
+    <table class="table">
+        <tr>
+            <th>
+                Nome
+            </th>
+            <th>
+                Sobrenome
+            </th>
+            <th>
+                E-mail
+            </th>
+            <th>
+                Autorização
+            </th>
+            <th>
+                Data de Cadastro
+            </th>
+            <th>
+                Data de Edição
+            </th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr style="vertical-align:middle;">
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Role.Type)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EnrollmentDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ChangeDate)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.UserId">Editar</a>
+                </td>
+                <td>
+                    <button type="submit" class="btn btn-link" asp-controller="User" style="border:0px;padding:0px;"
+                            asp-action="Delete" asp-route-id="@item.UserId" onclick="return confirm('Você tem certeza que quer apagar este usuário?');">
+                        Apagar
+                    </button>
+                </td>
+            </tr>
+        }
+    </table>
+</form>
+

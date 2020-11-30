@@ -1,0 +1,37 @@
+﻿@model Commom.DTOs.ReservationDTO
+
+
+<div id="reservationClientList">
+    <label>Acompanhante</label>
+    <input type="hidden" asp-for="ReservationId" />
+    <input type="hidden" asp-for="MaxOfGuests" />
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.ReservationClients.Count(); i++)
+            {
+                <tr>
+                    <td>
+                        <input type="hidden" asp-for="@Model.ReservationClients[i].ReservationId" />
+                        <input type="hidden" asp-for="@Model.ReservationClients[i].ClientId" />
+                        <input type="hidden" asp-for="@Model.ReservationClients[i].FirstName" />@Model.ReservationClients[i].FirstName
+                    </td>
+                    <td>
+                        <input type="hidden" asp-for="@Model.ReservationClients[i].LastName" />@Model.ReservationClients[i].LastName
+                    </td>
+                    <td>
+                        <input type="button" class="btn btn-secondary" onclick="removeOnEdit(@i)" value="Remover" />
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+

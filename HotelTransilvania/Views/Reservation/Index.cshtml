@@ -1,0 +1,153 @@
+﻿@using X.PagedList.Mvc.Core;
+@model X.PagedList.PagedList<Commom.DTOs.ReservationDTO>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Reservas</h2>
+
+<form>
+    <button type="submit" class="btn btn-info" asp-action="Create">Nova Reserva</button>
+</form>
+<br>
+
+<form style="margin:auto;width:auto;padding:1em;border:1px solid #CCC;border-radius:1em;">
+    <label class="control-label">Procurar:</label>
+    <div class="form-actions no-color">
+        <br>
+        <label class="control-label">De</label>
+        <input type="date" id="arrivalSearch" class="form-control-lg" data-dependent-validation='{"from": "departureSearch", "prop": "max"}' />
+        <span id="arrivalSearch" class="text-danger"></span>
+
+        <label class="control-label">até</label>
+        <input type="date" id="departureSearch" class="form-control-lg" data-dependent-validation='{("from": "arrivalSearch", "prop": "min"), ("from": "departureSearch", "prop": "max")}' />
+        <span id="departureSearch" class="text-danger"></span>
+
+        <button class="btn btn-group-lg" onclick="personalizedSearch()">Procurar</button>
+    </div>
+</form>
+<br>
+
+<form method="post">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Entrada
+                </th>
+                <th>
+                    Saída
+                </th>
+                <th>
+                    Hóspede
+                </th>
+                <th>
+                    Categoria
+                </th>
+                <th>
+                    Apartamento
+                </th>
+                <th>
+                    Situação
+                </th>
+                <th>
+                    Contato da Reserva
+                </th>
+                <th>
+                    Data de Criação
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr style="vertical-align:middle;">
+                    <td>
+                        @item.Arrival.ToShortDateString()
+                    </td>
+                    <td>
+                        @item.Departure.ToShortDateString()
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MainGuestFullName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.RoomCategory)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.RoomCode)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ContactPersonFullName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CreationDate)
+                    </td>
+
+                    @if (item.Status == Commom.Enums.ReservationStatusEnum.Reserved)
+                    {
+                        <td>
+                            <a asp-action="Edit" asp-route-reservationId="@item.ReservationId">Editar</a>
+                        </td>
+                        <td>
+
+                            <button type="submit" class="btn btn-link" asp-controller="Reservation" style="border:0px;padding:0px;"
+                                    asp-action="Cancel" asp-route-id="@item.ReservationId" onclick="return confirm('Você tem certeza que deseja cancelar esta reserva?');">
+                                Cancelar
+                            </button>
+                        </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+</form>
+
+
+<br>
+<div class="form-group">
+    <select type="number" id="pageSize" onchange="personalizedSearch()" class="form-control">
+        <option value="">Mostrar</option>
+        @foreach (var item in ViewBag.RecordNumber)
+        {
+            @if (ViewBag.PageSize == @item)
+            {
+                <option selected value="@item" label="@item"></option>
+            }
+            else
+            {
+                <option value="@item" label="@item"></option>
+            }
+        }
+    </select>
+    <span class="text-danger"></span>
+</div>
+
+
+<div class="row">
+    <div class="col-md-8">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page, pageSize = ViewBag.PageSize }))
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="~/js/views/reservation/index.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+}

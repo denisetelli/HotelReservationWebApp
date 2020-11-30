@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelTransilvania", "HotelTransilvania\HotelTransilvania.csproj", "{441B0A79-9A63-4536-94CE-6EBF3CBCB690}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{7678B189-B3F5-4FE4-A073-F1B258FFE1F9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "Business\Business.csproj", "{AA773A14-2194-499A-B72F-27E2DBB3BD82}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Commom", "Commom\Commom.csproj", "{8407AEA1-39F4-44ED-8F44-A9EB4AE1BC99}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8CA614BB-479C-4F52-B286-8EA567FB6237}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{32ADBA61-7F9D-4A48-B502-DD0EA7B0C3E1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business.UnitTests", "Business.UnitTests\Business.UnitTests.csproj", "{FAECF650-8FC4-489E-96FE-7809845F3303}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AA773A14-2194-499A-B72F-27E2DBB3BD82} = {AA773A14-2194-499A-B72F-27E2DBB3BD82}
+		{7678B189-B3F5-4FE4-A073-F1B258FFE1F9} = {7678B189-B3F5-4FE4-A073-F1B258FFE1F9}
+		{8407AEA1-39F4-44ED-8F44-A9EB4AE1BC99} = {8407AEA1-39F4-44ED-8F44-A9EB4AE1BC99}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{441B0A79-9A63-4536-94CE-6EBF3CBCB690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{441B0A79-9A63-4536-94CE-6EBF3CBCB690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{441B0A79-9A63-4536-94CE-6EBF3CBCB690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{441B0A79-9A63-4536-94CE-6EBF3CBCB690}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7678B189-B3F5-4FE4-A073-F1B258FFE1F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7678B189-B3F5-4FE4-A073-F1B258FFE1F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7678B189-B3F5-4FE4-A073-F1B258FFE1F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7678B189-B3F5-4FE4-A073-F1B258FFE1F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA773A14-2194-499A-B72F-27E2DBB3BD82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA773A14-2194-499A-B72F-27E2DBB3BD82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA773A14-2194-499A-B72F-27E2DBB3BD82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA773A14-2194-499A-B72F-27E2DBB3BD82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8407AEA1-39F4-44ED-8F44-A9EB4AE1BC99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8407AEA1-39F4-44ED-8F44-A9EB4AE1BC99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8407AEA1-39F4-44ED-8F44-A9EB4AE1BC99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8407AEA1-39F4-44ED-8F44-A9EB4AE1BC99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAECF650-8FC4-489E-96FE-7809845F3303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAECF650-8FC4-489E-96FE-7809845F3303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAECF650-8FC4-489E-96FE-7809845F3303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAECF650-8FC4-489E-96FE-7809845F3303}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{32ADBA61-7F9D-4A48-B502-DD0EA7B0C3E1} = {8CA614BB-479C-4F52-B286-8EA567FB6237}
+		{FAECF650-8FC4-489E-96FE-7809845F3303} = {32ADBA61-7F9D-4A48-B502-DD0EA7B0C3E1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B789A0DD-6E39-41D2-8B2D-72EF9A728FC2}
+	EndGlobalSection
+EndGlobal

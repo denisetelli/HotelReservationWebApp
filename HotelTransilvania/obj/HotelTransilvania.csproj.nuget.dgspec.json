@@ -1,0 +1,323 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\HotelTransilvania\\HotelTransilvania.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Business\\Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Business\\Business.csproj",
+        "projectName": "Business",
+        "projectPath": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Business\\Business.csproj",
+        "packagesPath": "C:\\Users\\denise.garcia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\denise.garcia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Commom\\Commom.csproj": {
+                "projectPath": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Commom\\Commom.csproj"
+              },
+              "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\DataAccess\\DataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "Microsoft.AspNetCore.Cryptography.KeyDerivation": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "X.PagedList": {
+              "target": "Package",
+              "version": "[7.9.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Commom\\Commom.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Commom\\Commom.csproj",
+        "projectName": "Commom",
+        "projectPath": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Commom\\Commom.csproj",
+        "packagesPath": "C:\\Users\\denise.garcia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Commom\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\denise.garcia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\DataAccess\\DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\DataAccess\\DataAccess.csproj",
+        "projectName": "DataAccess",
+        "projectPath": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\denise.garcia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\denise.garcia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Commom\\Commom.csproj": {
+                "projectPath": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Commom\\Commom.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.1.11, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "X.PagedList": {
+              "target": "Package",
+              "version": "[7.2.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\HotelTransilvania\\HotelTransilvania.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\HotelTransilvania\\HotelTransilvania.csproj",
+        "projectName": "HotelTransilvania",
+        "projectPath": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\HotelTransilvania\\HotelTransilvania.csproj",
+        "packagesPath": "C:\\Users\\denise.garcia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\HotelTransilvania\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\denise.garcia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Business\\Business.csproj": {
+                "projectPath": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Business\\Business.csproj"
+              },
+              "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Commom\\Commom.csproj": {
+                "projectPath": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Commom\\Commom.csproj"
+              },
+              "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\DataAccess\\DataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "Bootstrap.Datepicker": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
+            "BuildBundlerMinifier": {
+              "target": "Package",
+              "version": "[2.9.406, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[8.5.0, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.1.10, )"
+            },
+            "Microsoft.jQuery.Unobtrusive.Ajax": {
+              "target": "Package",
+              "version": "[3.2.6, )"
+            },
+            "NToastNotify": {
+              "target": "Package",
+              "version": "[5.0.8, )"
+            },
+            "X.PagedList.Mvc.Core": {
+              "target": "Package",
+              "version": "[7.2.0, )"
+            },
+            "jQuery": {
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "jQuery.Ajax.Unobtrusive": {
+              "target": "Package",
+              "version": "[2.0.20710, )"
+            },
+            "jQuery.InputMask": {
+              "target": "Package",
+              "version": "[4.0.6, )"
+            },
+            "jQuery.MaskedInput": {
+              "target": "Package",
+              "version": "[1.4.1, )"
+            },
+            "jQuery.Migrate": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "jQuery.UI.Combined": {
+              "target": "Package",
+              "version": "[1.12.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

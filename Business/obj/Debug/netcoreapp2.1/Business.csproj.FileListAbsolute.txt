@@ -1,0 +1,14 @@
+C:\Users\denise.garcia\source\repos\DB_DeniseProject\HotelTransilvania\Business\bin\Debug\netcoreapp2.1\Business.deps.json
+C:\Users\denise.garcia\source\repos\DB_DeniseProject\HotelTransilvania\Business\bin\Debug\netcoreapp2.1\Business.dll
+C:\Users\denise.garcia\source\repos\DB_DeniseProject\HotelTransilvania\Business\bin\Debug\netcoreapp2.1\Business.pdb
+C:\Users\denise.garcia\source\repos\DB_DeniseProject\HotelTransilvania\Business\bin\Debug\netcoreapp2.1\Commom.dll
+C:\Users\denise.garcia\source\repos\DB_DeniseProject\HotelTransilvania\Business\bin\Debug\netcoreapp2.1\DataAccess.dll
+C:\Users\denise.garcia\source\repos\DB_DeniseProject\HotelTransilvania\Business\bin\Debug\netcoreapp2.1\Commom.pdb
+C:\Users\denise.garcia\source\repos\DB_DeniseProject\HotelTransilvania\Business\bin\Debug\netcoreapp2.1\DataAccess.pdb
+C:\Users\denise.garcia\source\repos\DB_DeniseProject\HotelTransilvania\Business\obj\Debug\netcoreapp2.1\Business.csprojAssemblyReference.cache
+C:\Users\denise.garcia\source\repos\DB_DeniseProject\HotelTransilvania\Business\obj\Debug\netcoreapp2.1\Business.csproj.CoreCompileInputs.cache
+C:\Users\denise.garcia\source\repos\DB_DeniseProject\HotelTransilvania\Business\obj\Debug\netcoreapp2.1\Business.AssemblyInfoInputs.cache
+C:\Users\denise.garcia\source\repos\DB_DeniseProject\HotelTransilvania\Business\obj\Debug\netcoreapp2.1\Business.AssemblyInfo.cs
+C:\Users\denise.garcia\source\repos\DB_DeniseProject\HotelTransilvania\Business\obj\Debug\netcoreapp2.1\Business.csproj.CopyComplete
+C:\Users\denise.garcia\source\repos\DB_DeniseProject\HotelTransilvania\Business\obj\Debug\netcoreapp2.1\Business.dll
+C:\Users\denise.garcia\source\repos\DB_DeniseProject\HotelTransilvania\Business\obj\Debug\netcoreapp2.1\Business.pdb

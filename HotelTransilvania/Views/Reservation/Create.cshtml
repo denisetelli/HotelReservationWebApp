@@ -1,0 +1,115 @@
+﻿@model Commom.DTOs.ReservationDTO
+
+@{
+    ViewData["Title"] = "Create";
+
+}
+
+<h2>Nova Reserva</h2>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" id="createForm">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ReservationId" />
+            <input type="hidden" asp-for="MaxOfGuests" />
+           
+
+            <div class="form-group">
+                <label asp-for="Arrival" class="control-label">Entrada</label>
+                <input type="date" asp-for="Arrival" data-dependent-validation='{"from": "Departure", "prop": "max"}' class="form-control" />
+                <span asp-validation-for="Arrival" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Departure" class="control-label">Saída</label>
+                <input type="date" asp-for="Departure" data-dependent-validation='{"from": "Arrival", "prop": "min"}' class="form-control" />
+                <span asp-validation-for="Departure" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="TotalNights" class="control-label">Número de noites</label>
+                <input type="text" asp-for="TotalNights" class="form-control" disabled>
+                <span asp-validation-for="TotalNights" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label class="control-label">Categoria</label><br />
+                <select id="roomCategoryId" asp-for="RoomCategoryId" onchange="roomChange(this)" class="form-control">
+                    <option value="0">Selecione</option>
+                    @foreach (var item in ViewBag.RoomCategoryList)
+                    {
+                    <option value="@item.CategoryId" label="@item.Name"></option>
+
+                    }
+                </select>
+                <span asp-validation-for="RoomCategoryId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Rate" class="control-label">Valor da diária</label>
+                <input type="text" asp-for="Rate" class="form-control" disabled>
+                <input type="hidden" id="integerRate" />
+                <span asp-validation-for="Rate" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Apartamento</label><br />
+                <select id="roomId" asp-for="RoomId" onchange="calculateAmount()" class="form-control">
+                    <option value="@Model.RoomId">Selecione a categoria</option>
+                </select>
+                <span asp-validation-for="RoomId" class="text-danger"></span>
+                <label class="text-danger">@ViewData["NotAvailable"]</label>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="TotalAmount" class="control-label">Valor Total</label>
+                <input type="text" asp-for="TotalAmount" class="form-control" disabled>
+                <input type="hidden" id="integerTotal" />
+                <span asp-validation-for="TotalAmount" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Hóspede</label><br />
+                <input type="hidden" asp-for="MainGuestId" />
+                <input type="text" asp-for="MainGuestFullName" class="form-control" placeholder="Digite o nome para buscar">
+                <span asp-validation-for="MainGuestId" class="text-danger"></span>
+                <a target="_blank" type="submit" class="btn btn-secondary" asp-controller="Client" asp-action="Create">Criar Novo</a>
+            </div>
+
+            <partial name="_AccompanyingPartial.cshtml" model="@Model" />
+            <div class="form-group">
+                <input type="text" id="searchLetters2" class="form-control" placeholder="Digite o nome para buscar">
+                <input type="hidden" id="clientId" name="clientId" />
+                <a target="_blank" type="button" class="btn btn-secondary" onclick="validateAdd($('#clientId').val())">Adicionar</a>
+                <a target="_blank" type="submit" class="btn btn-secondary" asp-controller="Client" asp-action="Create">Criar Novo</a>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Contato</label><br />
+                <input type="hidden" asp-for="ContactPersonId">
+                <input type="text" asp-for="ContactPersonFullName" class="form-control" placeholder="Digite o nome para buscar" />
+                <span asp-validation-for="ContactPersonId" class="text-danger"></span>
+                <a target="_blank" type="submit" class="btn btn-secondary" asp-controller="Client" asp-action="Create">Criar Novo</a>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Salvar reserva" class="btn btn-info" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Retornar</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+<script src="~/js/views/reservation/reservation.js"></script>
+<script src="~/js/views/reservation/room.js"></script>
+<script src="~/js/views/reservation/mainguest.js"></script>
+<script src="~/js/views/reservation/accompanying.js"></script>
+<script src="~/js/views/reservation/contact.js"></script>
+}

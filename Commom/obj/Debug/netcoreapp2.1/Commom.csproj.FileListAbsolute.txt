@@ -1,0 +1,9 @@
+C:\Users\denise.garcia\source\repos\DB_DeniseProject\HotelTransilvania\Commom\bin\Debug\netcoreapp2.1\Commom.deps.json
+C:\Users\denise.garcia\source\repos\DB_DeniseProject\HotelTransilvania\Commom\bin\Debug\netcoreapp2.1\Commom.dll
+C:\Users\denise.garcia\source\repos\DB_DeniseProject\HotelTransilvania\Commom\bin\Debug\netcoreapp2.1\Commom.pdb
+C:\Users\denise.garcia\source\repos\DB_DeniseProject\HotelTransilvania\Commom\obj\Debug\netcoreapp2.1\Commom.csproj.CoreCompileInputs.cache
+C:\Users\denise.garcia\source\repos\DB_DeniseProject\HotelTransilvania\Commom\obj\Debug\netcoreapp2.1\Commom.AssemblyInfoInputs.cache
+C:\Users\denise.garcia\source\repos\DB_DeniseProject\HotelTransilvania\Commom\obj\Debug\netcoreapp2.1\Commom.AssemblyInfo.cs
+C:\Users\denise.garcia\source\repos\DB_DeniseProject\HotelTransilvania\Commom\obj\Debug\netcoreapp2.1\Commom.dll
+C:\Users\denise.garcia\source\repos\DB_DeniseProject\HotelTransilvania\Commom\obj\Debug\netcoreapp2.1\Commom.pdb
+C:\Users\denise.garcia\source\repos\DB_DeniseProject\HotelTransilvania\Commom\obj\Debug\netcoreapp2.1\Commom.csprojAssemblyReference.cache

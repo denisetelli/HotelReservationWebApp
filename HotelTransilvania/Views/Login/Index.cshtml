@@ -1,0 +1,39 @@
+﻿@model HotelTransilvania.ViewModels.LoginViewModel
+
+@{
+    ViewData["Title"] = "Login";
+
+}
+
+
+<h1>Login</h1>
+<h4>Digite suas informações nos campos abaixo.</h4>
+
+<form asp-action="Login">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <input type="hidden" name="returnUrl" value="@Context.Request.Query["returnUrl"].SingleOrDefault()" />
+
+    <label class="text-danger">@ViewData["ErrorMessage"]</label>
+
+    <div class="form-group">
+        <label asp-for="Email" class="control-label">E-mail:</label>
+        <input type="email" asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Password" class="control-label">Senha:</label>
+        <input type="password" asp-for="Password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+    &nbsp;
+    <div class="form-group">
+        <button type="submit" class="btn btn-info" asp-controller="Login" asp-action="Login">Entrar</button>
+    </div>
+</form>
+
+
+
+
+
+

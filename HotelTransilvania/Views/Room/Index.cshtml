@@ -1,0 +1,68 @@
+﻿@model IEnumerable<Commom.DTOs.RoomDTO>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Apartamentos cadastrados</h2>
+
+<form>
+    <button type="submit" class="btn btn-info" asp-action="Create">Cadastrar novo</button>
+</form>
+
+<form method="post">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Código
+                </th>
+                <th>
+                    Categoria
+                </th>
+                <th>
+                    Qtd hóspedes
+                </th>
+                <th>
+                    Data de Cadastro
+                </th>
+                <th>
+                    Data de Edição
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr style="vertical-align:middle;">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Code)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Category.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MaxOfGuests)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CreationDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ChangeDate)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-roomId="@item.RoomId">Editar</a>
+                    </td>
+                    <td>
+                        <button type="submit" class="btn btn-link" asp-controller="Room" style="border:0px;padding:0px;"
+                                asp-action="Delete" asp-route-roomId="@item.RoomId" onclick="return confirm('Você tem certeza que quer apagar este apartamento?');">
+                            Apagar
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</form>
+

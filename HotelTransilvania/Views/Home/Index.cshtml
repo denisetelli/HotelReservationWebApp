@@ -1,0 +1,87 @@
+﻿@model List<ArrivalsOfTheDayViewModel>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <h3>Olá @User.Identity.Name !</h3><br />
+        <h4>Reservas com entrada hoje</h4>
+        <br />
+        <table class="table" style="vertical-align:middle;white-space:nowrap">
+            <thead>
+                <tr>
+                    <th>
+                        Entrada
+                    </th>
+                    <th>
+                        Saída
+                    </th>
+                    <th>
+                        Hóspede
+                    </th>
+                    <th>
+                        Categoria
+                    </th>
+                    <th>
+                        Apartamento
+                    </th>
+                    <th>
+                        Situação
+                    </th>
+                    <th>
+                        Contato da Reserva
+                    </th>
+                    <th>
+                        Data de Criação
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr style="vertical-align:middle;">
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Arrival)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Departure)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.MainGuestFullName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.RoomCategory)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.RoomCode)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Status)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ContactPersonFullName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CreationDate)
+                        </td>
+                        <td>
+                            <a asp-controller="Reservation" asp-action="Edit" asp-route-reservationId="@item.ReservationId">Editar</a>
+                        </td>
+                        <td>
+                            <button type="submit" class="btn btn-link" asp-controller="Reservation" style="border:0px;padding:0px;"
+                                    asp-action="Cancel" asp-route-id="@item.ReservationId" onclick="return confirm('Você tem certeza que deseja cancelar esta reserva?');">
+                                Cancelar
+                            </button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+

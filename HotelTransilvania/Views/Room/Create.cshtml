@@ -1,0 +1,53 @@
+﻿@model Commom.DTOs.RoomDTO
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Cadastrar</h2>
+<h4>Digite abaixo as informações correspondentes.</h4>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <label class="text-danger">@ViewData["ErrorMessage"]</label>
+            <div class="form-group">
+                <input type="hidden" asp-for="RoomId" />
+                <label asp-for="Code" class="control-label">Código</label>
+                <input asp-for="Code" class="form-control" />
+                <span asp-validation-for="Code" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MaxOfGuests" class="control-label">Máximo de hóspedes</label>
+                <input type="text" asp-for="MaxOfGuests" class="form-control" />
+                <span asp-validation-for="MaxOfGuests" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Categoria</label><br />
+                <select asp-for="CategoryId" class="form-control">
+                    <option value="">Selecione</option>
+                    @foreach (var item in ViewBag.RoomCategoryList)
+                    {
+                        <option value="@item.CategoryId" label="@item.Name"></option>
+                    }
+                </select>
+                <span asp-validation-for="CategoryId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Cadastrar" class="btn btn-info" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Retornar</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+

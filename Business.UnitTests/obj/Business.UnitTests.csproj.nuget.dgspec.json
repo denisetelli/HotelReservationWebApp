@@ -1,0 +1,266 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Business.UnitTests\\Business.UnitTests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Business.UnitTests\\Business.UnitTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Business.UnitTests\\Business.UnitTests.csproj",
+        "projectName": "Business.UnitTests",
+        "projectPath": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Business.UnitTests\\Business.UnitTests.csproj",
+        "packagesPath": "C:\\Users\\denise.garcia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Business.UnitTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\denise.garcia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Business\\Business.csproj": {
+                "projectPath": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Business\\Business.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[15.9.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.13.1, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Business\\Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Business\\Business.csproj",
+        "projectName": "Business",
+        "projectPath": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Business\\Business.csproj",
+        "packagesPath": "C:\\Users\\denise.garcia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\denise.garcia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Commom\\Commom.csproj": {
+                "projectPath": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Commom\\Commom.csproj"
+              },
+              "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\DataAccess\\DataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "Microsoft.AspNetCore.Cryptography.KeyDerivation": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "X.PagedList": {
+              "target": "Package",
+              "version": "[7.9.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Commom\\Commom.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Commom\\Commom.csproj",
+        "projectName": "Commom",
+        "projectPath": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Commom\\Commom.csproj",
+        "packagesPath": "C:\\Users\\denise.garcia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Commom\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\denise.garcia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\DataAccess\\DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\DataAccess\\DataAccess.csproj",
+        "projectName": "DataAccess",
+        "projectPath": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\denise.garcia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\denise.garcia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Commom\\Commom.csproj": {
+                "projectPath": "C:\\Users\\denise.garcia\\source\\repos\\DB_DeniseProject\\HotelTransilvania\\Commom\\Commom.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.1.11, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "X.PagedList": {
+              "target": "Package",
+              "version": "[7.2.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
